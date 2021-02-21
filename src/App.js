@@ -20,12 +20,17 @@ const menuItems = [
 function App() {
   // Setting a piece of state for the 'cart'
   const [cart, setCart] = useState([])
+  const [menuItems, setMenuItems] = useState([])
 
   useEffect(() => {
     // Alan-ai button to call
     alanBtn({ 
       key: '9298c5e0f50206b31f16ca738b3fb5a62e956eca572e1d8b807a3e2338fdd0dc/stage',
       onCommand: (commandData) => {
+        // Whenever user says 'Show me the menu' we would like Alan-ai to return the menu 
+        if(commandData.command === 'getMenu') {
+          setMenuItems(commandData.data);
+        }
       },
     });
   }, [])
@@ -38,26 +43,28 @@ function App() {
     })
   }
 
-  return <div className="App">
-  {/* Map over this menuItems */}
-  {menuItems.map((menuItem) => (
-    // key will be the 'name'
-    // This is the menu items that the user will see
-    <li key={menuItem.name}>
-      {menuItem.name} - ${menuItem.price} - {menuItem.category}
-      {/* Button to add menu items to the cart */}
-    <button onClick={() => addToCart(menuItem)}>Add to Cart</button>
-    </li>
-  ))}
-  <h2>Cart</h2>
-  {/* Mapping through 'cart items' */}
-  {cart.map((cartItem) => (
-    // This will the 'cart item' user will see
-    <li key={cartItem.name}>
-      {cartItem.name} - ${cartItem.price} - {cartItem.category}
-    </li>
-  ))}
-  </div>
+  return (
+    <div className="App">
+    {/* Map over this menuItems */}
+    {menuItems.map((menuItem) => (
+      // key will be the 'name'
+      // This is the menu items that the user will see
+      <li key={menuItem.name}>
+        {menuItem.name} - ${menuItem.price} - {menuItem.category}
+       {/* Button to add menu items to the cart */}
+      <button onClick={() => addToCart(menuItem)}>Add to Cart</button>
+      </li>
+    ))}
+    <h2>Cart</h2>
+    {/* Mapping through 'cart items' */}
+    {cart.map((cartItem) => (
+      // This will the 'cart item' user will see
+      <li key={cartItem.name}>
+        {cartItem.name} - ${cartItem.price} - {cartItem.category}
+      </li>
+    ))}
+    </div>
+  )
 }
 
 export default App;
