@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import './App.css';
 // Importing Alan-ai
 import alanBtn from '@alan-ai/alan-sdk-web';
 
@@ -48,21 +49,21 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="alan_title">Alan Restaurant </h1>
     {/* Map over this menuItems */}
+    <h2 className="menu_title">Menu</h2>
     {menuItems.map((menuItem) => (
       // key will be the 'name'
       // This is the menu items that the user will see
-      <li key={menuItem.name}>
+      <li key={menuItem.name} className="menu_list">
         {menuItem.name} - ${menuItem.price} - {menuItem.category}
-       {/* Button to add menu items to the cart */}
-      <button onClick={() => addToCart(menuItem)}>Add to Cart</button>
       </li>
     ))}
-    <h2>Cart</h2>
+    <h2 className="cart_title">Cart</h2>
     {/* Mapping through 'cart items' */}
     {cart.map((cartItem) => (
       // This will the 'cart item' user will see
-      <li key={cartItem.name}>
+      <li key={cartItem.name} className="menu_list">
         {cartItem.name} - ${cartItem.price} - {cartItem.category}
       </li>
     ))}

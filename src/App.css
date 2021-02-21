@@ -1,0 +1,55 @@
+/* Concert One */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* RocknRoll One */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* Press Start 2P */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: url(sit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alan_title {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+    font-size: 60px;
+    color: red;
+    -webkit-text-stroke: 1px yellow;
+    font-family: 'Press Start 2P';
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
+    height: 100%;
+   
+}
+.menu_title {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Concert One', sans-serif;
+    color: red;
+    font-size: 40px;
+   
+}
+
+.menu_list {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    list-style-type: decimal;
+    font-family: 'Concert One';
+    color: black;
+    
+}
+
+.cart_title {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Concert One', sans-serif;
+    color: blue;
+    font-size: 40px;
+    
+}
