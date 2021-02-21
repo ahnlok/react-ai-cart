@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-ai-cart/static/css/main.8452f643.chunk.css",
+    "main.js": "/react-ai-cart/static/js/main.4c574cdc.chunk.js",
+    "main.js.map": "/react-ai-cart/static/js/main.4c574cdc.chunk.js.map",
+    "runtime-main.js": "/react-ai-cart/static/js/runtime-main.53847455.js",
+    "runtime-main.js.map": "/react-ai-cart/static/js/runtime-main.53847455.js.map",
+    "static/js/2.493cec1c.chunk.js": "/react-ai-cart/static/js/2.493cec1c.chunk.js",
+    "static/js/2.493cec1c.chunk.js.map": "/react-ai-cart/static/js/2.493cec1c.chunk.js.map",
+    "index.html": "/react-ai-cart/index.html",
+    "static/css/main.8452f643.chunk.css.map": "/react-ai-cart/static/css/main.8452f643.chunk.css.map",
+    "static/js/2.493cec1c.chunk.js.LICENSE.txt": "/react-ai-cart/static/js/2.493cec1c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-ai-cart/static/media/sit.0c77644d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53847455.js",
+    "static/js/2.493cec1c.chunk.js",
+    "static/css/main.8452f643.chunk.css",
+    "static/js/main.4c574cdc.chunk.js"
+  ]
+}
