@@ -30,10 +30,13 @@ function App() {
         // Whenever user says 'Show me the menu' we would like Alan-ai to return the menu 
         if(commandData.command === 'getMenu') {
           setMenuItems(commandData.data);
+        } else if (commandData.command === 'addToCart') {
+          addToCart(commandData.data);
         }
       },
     });
   }, [])
+
   // Function to add items to the cart
   const addToCart = (menuItem) => {
     setCart((oldCart) => {
