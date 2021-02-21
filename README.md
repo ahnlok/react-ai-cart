@@ -12,7 +12,7 @@
 ---
 ## **Guidline:**
 ### 1. Start: 
-#### -Follow the link: <https://ahnlok.github.io/react-ai-cart/>
+#### -Follow the link: < https://ahnlok.github.io/react-ai-cart/>
 <br />
 
 ### 2. Main Page:
@@ -149,7 +149,7 @@
 
 ## **GitHub**
 ### **_GitHub_**: **<https://github.com/ahnlok/react-ai-cart>**
-### **_Deployed Github Site_**: **<https://ahnlok.github.io/react-ai-cart/>**
+### **_Deployed Github Site_**: **< https://ahnlok.github.io/react-ai-cart/>**
 
 
 ---
